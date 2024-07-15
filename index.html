@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>链接导航</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* min-height: 100vh; */
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .module {
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .module h2 {
+            margin-bottom: 15px;
+        }
+        .link-item {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .link-item a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .copy-button {
+            padding: 5px 10px;
+            background-color: #ddd;
+            border: none;
+            cursor: pointer;
+        }
+        .module1 { background-color: #f0f8ff; }
+        .module2 { background-color: #e6ffe6; }
+        .module3 { background-color: #fff0f5; }
+        .module4 { background-color: #f5f5dc; }
+        .module5 { background-color: #ffe4e1; }
+        .module6 { background-color: #e0ffff; }
+    </style>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('链接已复制到剪切板: ' + text);
+            }, (err) => {
+                console.error('无法复制到剪切板: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+
+<div class="module module1">
+    <h2>办公常用链接</h2>
+    <div class="link-item">
+        <a href="https://kunlun.itniotech.cn/login" target="_blank">昆仑</a>
+        <button class="copy-button" onclick="copyToClipboard('https://kunlun.itniotech.cn/login')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://loghub.itniotech.com/" target="_blank">OpenSearch日志系统</a>
+        <button class="copy-button" onclick="copyToClipboard('https://loghub.itniotech.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="http://www.tyhtech.net/H3n8Yh2Uje7hendhgY/NWP/index.html" target="_blank">NWP页面_旧</a>
+        <button class="copy-button" onclick="copyToClipboard('http://www.tyhtech.net/H3n8Yh2Uje7hendhgY/NWP/index.html')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://nwp.tyhsys.com/" target="_blank">NWP页面_新</a>
+        <button class="copy-button" onclick="copyToClipboard('https://nwp.tyhsys.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://coinpay.freshdesk.com/" target="_blank">coinpayment问题工单</a>
+        <button class="copy-button" onclick="copyToClipboard('https://coinpay.freshdesk.com/')">复制链接</button>
+    </div>
+</div>
+
+<div class="module module2">
+    <h2>ITNIO常用链接</h2>
+    <div class="link-item">
+        <a href="https://www.itniotech.cn/" target="_blank">ITNIO官网</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.itniotech.cn/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://console.itniotech.com/" target="_blank">Web客户端</a>
+        <button class="copy-button" onclick="copyToClipboard('https://console.itniotech.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://www.itniotech.cn/api/account/" target="_blank">API文档</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.itniotech.cn/api/account/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://icoinspay.com/" target="_blank">U充值icoinspay</a>
+        <button class="copy-button" onclick="copyToClipboard('https://icoinspay.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://cc.itniotech.cn" target="_blank">云呼叫中心</a>
+        <button class="copy-button" onclick="copyToClipboard('https://cc.itniotech.cn')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://omni.itniotech.com/" target="_blank">社媒全渠道</a>
+        <button class="copy-button" onclick="copyToClipboard('https://omni.itniotech.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://business.facebook.com/latest/home?asset_id=118268187933309&business_id=159516550380928&nav_ref=bm_more_tools_header" target="_blank">社媒meta</a>
+        <button class="copy-button" onclick="copyToClipboard('https://business.facebook.com/latest/home?asset_id=118268187933309&business_id=159516550380928&nav_ref=bm_more_tools_header')">复制链接</button>
+    </div>
+</div>
+
+<div class="module module3">
+    <h2>BUKA常用链接</h2>
+    <div class="link-item">
+        <a href="http://www.onbuka.com/" target="_blank">BUKA官网</a>
+        <button class="copy-button" onclick="copyToClipboard('http://www.onbuka.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://my.onbuka.com/" target="_blank">Web客户端</a>
+        <button class="copy-button" onclick="copyToClipboard('https://my.onbuka.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://www.onbuka.com/zh-cn/sms-api1/" target="_blank">API文档</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.onbuka.com/zh-cn/sms-api1/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://cc.onbuka.cn" target="_blank">云呼叫中心</a>
+        <button class="copy-button" onclick="copyToClipboard('https://cc.onbuka.cn')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://intl.cloud.tencent.com/login/subAccount/100012236660?type=subAccount&username=Skyline1" target="_blank">BUKA腾讯邮件查询</a>
+        <button class="copy-button" onclick="copyToClipboard('https://intl.cloud.tencent.com/login/subAccount/100012236660?type=subAccount&username=Skyline1')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://shellspay.com/" target="_blank">U充值shellspay</a>
+        <button class="copy-button" onclick="copyToClipboard('https://shellspay.com/')">复制链接</button>
+    </div>
+</div>
+
+<div class="module module4">
+    <h2>Laaffic常用链接</h2>
+    <div class="link-item">
+        <a href="https://www.laaffic.com" target="_blank">laaffic官网</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.laaffic.com')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://my.laaffic.com/" target="_blank">Web客户端</a>
+        <button class="copy-button" onclick="copyToClipboard('https://my.laaffic.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://www.laaffic.com/api/" target="_blank">API文档</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.laaffic.com/api/')">复制链接</button>
+    </div>
+</div>
+
+<div class="module module5">
+    <h2>代理商常用链接</h2>
+    <div class="link-item">
+        <a href="https://affiliate.onbuka.com/login" target="_blank">BUKA星推官</a>
+        <button class="copy-button" onclick="copyToClipboard('https://affiliate.onbuka.com/login')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://partner.onbuka.com/login" target="_blank">BUKA全球合伙人</a>
+        <button class="copy-button" onclick="copyToClipboard('https://partner.onbuka.com/login')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://partnercn.onbuka.com/" target="_blank">BUKA国内合伙人</a>
+        <button class="copy-button" onclick="copyToClipboard('https://partnercn.onbuka.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://partner.laaffic.com/home" target="_blank">laaffic合伙人</a>
+        <button class="copy-button" onclick="copyToClipboard('https://partner.laaffic.com/home')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://affiliate.laaffic.com/login" target="_blank">laaffic星推官</a>
+        <button class="copy-button" onclick="copyToClipboard('https://affiliate.laaffic.com/login')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://traffii.cn/" target="_blank">信流科技客户端</a>
+        <button class="copy-button" onclick="copyToClipboard('https://traffii.cn/')">复制链接</button>
+    </div>
+</div>
+
+<div class="module module6">
+    <h2>日常常用工具链接</h2>
+    <div class="link-item">
+        <a href="https://realnameverify.fadada.com/fddAuthenticationService/index.jsp#/progressEnquiry" target="_blank">法大大企业认证查询</a>
+        <button class="copy-button" onclick="copyToClipboard('https://realnameverify.fadada.com/fddAuthenticationService/index.jsp#/progressEnquiry')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="http://jump.tyhtech.net:3001/" target="_blank">uptime-kuma监控登录信息</a>
+        <button class="copy-button" onclick="copyToClipboard('http://jump.tyhtech.net:3001/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://portal.i-test.net/" target="_blank">ITEST测试工具</a>
+        <button class="copy-button" onclick="copyToClipboard('https://portal.i-test.net/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://app.testelium.com/" target="_blank">Testelium工具</a>
+        <button class="copy-button" onclick="copyToClipboard('https://app.testelium.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://webhook.site/" target="_blank">webhook报告接收检测</a>
+        <button class="copy-button" onclick="copyToClipboard('https://webhook.site/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://charactercounter.com/sms" target="_blank">短信特殊字符查询</a>
+        <button class="copy-button" onclick="copyToClipboard('https://charactercounter.com/sms')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://www.text-to-speech.cn/" target="_blank">文本转语音工具</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.text-to-speech.cn/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://www.huatools.com/comma-split/" target="_blank">逗号分隔、换行工具</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.huatools.com/comma-split/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://www.107000.com/T-Hex/" target="_blank">16进制转字符</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.107000.com/T-Hex/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://www.sojson.com/md5" target="_blank">MD5加密</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.sojson.com/md5')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://tool.lu/timestamp/" target="_blank">时间戳生成</a>
+        <button class="copy-button" onclick="copyToClipboard('https://tool.lu/timestamp/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://quickemailverification.com/login" target="_blank">邮件地址校验</a>
+        <button class="copy-button" onclick="copyToClipboard('https://quickemailverification.com/login')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://www.nslookup.io/" target="_blank">邮件域名DNS记录查询</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.nslookup.io/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://www.mail-tester.com/" target="_blank">邮件内容检测</a>
+        <button class="copy-button" onclick="copyToClipboard('https://www.mail-tester.com/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="http://121.201.34.80:9080/crm" target="_blank">华邦</a>
+        <button class="copy-button" onclick="copyToClipboard('http://121.201.34.80:9080/crm')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://crm.cnabke.com/#/cusManage/custom/index?tabIndex=1" target="_blank">AB客</a>
+        <button class="copy-button" onclick="copyToClipboard('https://crm.cnabke.com/#/cusManage/custom/index?tabIndex=1')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="http://uptime.skyline.com/dashboard" target="_blank">uptime-kuma监控登录信息</a>
+        <button class="copy-button" onclick="copyToClipboard('http://uptime.skyline.com/dashboard')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://dnschecker.org/" target="_blank">DNS-checker</a>
+        <button class="copy-button" onclick="copyToClipboard('https://dnschecker.org/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="https://mail.td/zh/mail/" target="_blank">临时邮箱生成工具</a>
+        <button class="copy-button" onclick="copyToClipboard('https://mail.td/zh/mail/')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="http://www.tyhtech.net/block/index.html" target="_blank">拉黑记录</a>
+        <button class="copy-button" onclick="copyToClipboard('http://www.tyhtech.net/block/index.html')">复制链接</button>
+    </div>
+    <div class="link-item">
+        <a href="softwareClient/" target="_blank">常用软件客户端下载</a>
+        <button class="copy-button" onclick="copyToClipboard('softwareClient/')">复制链接</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,23 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="./assets/uni.d2d2b118.css">
+<html lang="zh">
 
-    <meta charset="UTF-8" />
-    <script>
-      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
-        CSS.supports('top: constant(a)'))
-      document.write(
-        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
-        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <title>天涯导航</title>
+    <meta name="description" content="一个只会Ctrl+C和Ctrl+v的亏本天涯导航。">
+    <meta name="keywords" content="天涯导航导航">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="static/css/index.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.css">-->
+    <script type="text/javascript">
+        if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+            alert('浏览器不支持');
+        }
     </script>
-    <title>Findit</title>
-    <!--preload-links-->
-    <!--app-context-->
-    <script type="module" crossorigin src="./assets/index-5BywQYfU.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BSsxLY3L.css">
-  </head>
-  <body>
-    <div id="app"><!--app-html--></div>
-  </body>
+</head>
+
+<body>
+    <div id="body-wrap">
+        <nav class="not_index_bg" id="nav" style="background-image:url(https://api.ixiaowai.cn/api/api.php)">
+            <div id="page_site-info">
+                <div id="site-title">
+                    <span class="blogtitle"></span>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                    <script>
+                        var typed = new Typed(".blogtitle", {
+                            strings: ['用我导航', '早点下班'],
+                            startDelay: 300,
+                            typeSpeed: 100,
+                            loop: true,
+                            backSpeed: 50,
+                            showCursor: true
+                        });
+                    </script>
+                </div>
+            </div>
+        </nav>
+        <main id="content-outer">
+            <div class="layout_page" id="content-inner">
+                <div class="aside_content" id="aside_content">
+
+                    <div class="card-widget card-webinfo">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                <span>站点信息</span>
+                            </div>
+                            <div class="webinfo">
+                                <div class="webinfo-item">
+                                    <div class="webinfo-site-uv-name">本站访客数 :</div>
+                                    <div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div>
+                                </div>
+                                <div class="webinfo-item">
+                                    <div class="webinfo-site-name">本站总访问量 :</div>
+                                    <div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-widget card-webinfo">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <span>电梯直达</span>
+                            </div>
+                                <div class="webinfo_fit">
+                                <div class="webinfo_fit_ch">
+                                    <a href="#changyonglianjie" target="_blank" rel="noopener noreferrer" class="webinfo_fit_ch">1*常用链接</a><br>
+                                    <a href="#itnio" target="_blank" rel="noopener noreferrer" class="webinfo_fit_ch">2*ITNIO导航</a><br>
+                                    <a href="#buka" target="_blank" rel="noopener noreferrer" class="webinfo_fit_ch">3*BUKA导航</a><br>
+                                    <a href="#laaffic" target="_blank" rel="noopener noreferrer" class="webinfo_fit_ch">4*laaffic导航</a><br>
+                                    <a href="#tool" target="_blank" rel="noopener noreferrer" class="webinfo_fit_ch">5*tool导航</a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+
+                <article id="page">
+                    <div class="article-container">
+<!--  以下添加内容 -->
+
+<!--  1、常用链接 -->
+                        <h2 id="changyonglianjie">1*常用链接</h2>
+                        <div class="tool">
+                            <span>（1001）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">昆仑</span>
+                            <a href="https://www.tyhsys.cn" target="_blank" class="download" >https://www.tyhsys.cn</a>
+                            <a href="https://www.tyhsys.com" target="_blank">https://www.tyhsys.com</a>
+                            <br>         
+                        </div>
+                        <div class="tool">
+                            <span>（1001）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">日志系统</span>
+                            <a href="https://loghub.itniotech.com/_dashboards/app/home" target="_blank" class="download" >https://loghub.itniotech.com/_dashboards/app/home</a>
+                            <br>         
+                        </div>
+<!--  2、ITNIO导航 -->
+                        <h2 id="itnio">2*ITNIO导航</h2>
+                        <div class="tool">
+                            <span>（2001）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">Web客户端</span>
+                            <a href="https://console.itniotech.com" target="_blank" class="download" >https://console.itniotech.com</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（2002）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">API文档</span>
+                            <a href="https://www.itniotech.cn/api/account" target="_blank" class="download" >https://www.itniotech.cn/api</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（2003）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">U充值icoinspay</span>
+                            <a href="https://icoinspay.com/" target="_blank" class="download" >https://icoinspay.com/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（2004）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">社媒Meta</span>
+                            <a href="https://business.facebook.com/business/loginpage/" target="_blank" class="download" >https://business.facebook.com/business/loginpage/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（2005）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">A线腾讯邮件查询</span>
+                            <a href="https://www.tencentcloud.com/account/login/subAccount/200031036234?type=subAccount&username=itnio" target="_blank" class="download" >https://www.tencentcloud.com/account/login</a>
+                            <br>    
+                        </div>
+
+<!--  3、BUKA导航 -->
+                        <h2 id="buka">3*BUKA导航</h2>
+                        <div class="tool">
+                            <span>（3001）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">Web客户端</span>
+                            <a href="https://my.onbuka.com/" target="_blank" class="download" >https://my.onbuka.com/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（3002）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">API文档</span>
+                            <a href="https://www.onbuka.com/zh-cn/sms-api1/" target="_blank" class="download" >https://www.onbuka.com/zh-cn/sms-api1/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（3003）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">腾讯邮件查询</span>
+                            <a href="https://intl.cloud.tencent.com/login/subAccount/100012236660?type=subAccount&username=Skyline1" target="_blank" class="download" >https://intl.cloud.tencent.com/login</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（3004）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">U充值shellspay</span>
+                            <a href="https://shellspay.com/" target="_blank" class="download" >https://shellspay.com/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（3005）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">BUKA星推官</span>
+                            <a href="https://affiliate.onbuka.com/login" target="_blank" class="download" >https://affiliate.onbuka.com/login</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（3006）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">BUKA全球合伙人</span>
+                            <a href="https://partner.onbuka.com/login" target="_blank" class="download" >https://partner.onbuka.com/login</a>
+                            <br>    
+                        </div>
+
+<!--  4、Laaffic导航 -->
+                        <h2 id="laaffic">4*Laaffic导航</h2>
+                        <div class="tool">
+                            <span>（4001）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">Web客户端</span>
+                            <a href="https://my.laaffic.com/" target="_blank" class="download" >https://my.laaffic.com/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（4002）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">API文档</span>
+                            <a href="https://www.laaffic.com/api/" target="_blank" class="download" >https://www.laaffic.com/api/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（4003）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">laaffic合伙人</span>
+                            <a href="https://partner.laaffic.com/home" target="_blank" class="download" >https://partner.laaffic.com/home</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（4004）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">laaffic星推官</span>
+                            <a href="https://affiliate.laaffic.com/login" target="_blank" class="download" >https://affiliate.laaffic.com/login</a>
+                            <br>    
+                        </div>
+<!--  5、Tool导航 -->
+                        <h2 id="tool">5*Tool导航</h2>
+                        <div class="tool">
+                            <span>（5001）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">webhook报告接收检测</span>
+                            <a href="https://webhook.site/" target="_blank" class="download" >https://webhook.site/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（5002）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">短信特殊字符查询</span>
+                            <a href="https://charactercounter.com/sms" target="_blank" class="download" >https://charactercounter.com/sms</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（5003）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">文本转语音工具</span>
+                            <a href="https://www.text-to-speech.cn" target="_blank" class="download" >https://www.text-to-speech.cn</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（5004）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">逗号分隔、换行工具</span>
+                            <a href="https://www.huatools.com/comma-split" target="_blank" class="download" >https://www.huatools.com/comma-split</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（5001）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">16进制转字符</span>
+                            <a href="https://www.107000.com/T-Hex/" target="_blank" class="download" >https://www.107000.com/T-Hex/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（5002）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">MD5加密</span>
+                            <a href="https://www.sojson.com/md5" target="_blank" class="download" >https://www.sojson.com/md5</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（5003）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">时间戳生成</span>
+                            <a href="https://tool.lu/timestamp/" target="_blank" class="download" >https://tool.lu/timestamp/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（5004）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">邮件地址校验</span>
+                            <a href="https://quickemailverification.com/login" target="_blank" class="download" >https://quickemailverification.com/login</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（5003）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">Json格式校验</span>
+                            <a href="https://www.ab173.com/gongju/json/" target="_blank" class="download" >https://www.ab173.com/gongju/json/</a>
+                            <br>    
+                        </div>
+                        <div class="tool">
+                            <span>（5004）</span> 
+                            <span style="color:#000000;font-weight:bold|bolder;font-size:15px">临时邮箱</span>
+                            <a href="https://mail.td/zh/mail" target="_blank" class="download" >https://mail.td/zh/mail</a>
+                            <br>    
+                        </div>
+                </article>
+            </div>
+        </main>
+        <footer id="footer">
+            <div id="footer-wrap">
+                <div class="copyright">&copy;内容由“天涯导航”授权提供！</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" async></script>
+
+    <!--鼠标点击效果-->
+    <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+
+    <script>function myFunction(){alert("请耐心等待");}</script>
+
+    <script type="text/javascript">
+        console.clear();
+//         console.log("%c 有朋自远方来, 不亦说乎.", "background:#24272A; color:#ffffff", "");
+//         console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/laoxuai");
+//         console.log("%c 版本号: %c", "background:#24272A; color:#ffffff", "", "1.0.0");
+
+
+        (function ($) {
+            $.fn.snow = function (options) {
+                var $flake = $('<div id="snowbox" />').css({ 'position': 'absolute', 'z-index': '9999', 'top': '-50px' }).html('&#10052;'),
+                    documentHeight = $(document).height(),
+                    documentWidth = $(document).width(),
+                    defaults = {
+                        minSize: 10,
+                        maxSize: 20,
+                        newOn: 1000,
+                        flakeColor: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+                    },
+                    options = $.extend({}, defaults, options);
+                var interval = setInterval(function () {
+                    var startPositionLeft = Math.random() * documentWidth - 100,
+                        startOpacity = 0.5 + Math.random(),
+                        sizeFlake = options.minSize + Math.random() * options.maxSize,
+                        endPositionTop = documentHeight - 200,
+                        endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+                        durationFall = documentHeight * 10 + Math.random() * 5000;
+                    $flake.clone().appendTo('body').css({
+                        left: startPositionLeft,
+                        opacity: startOpacity,
+                        'font-size': sizeFlake,
+                        color: options.flakeColor
+                    }).animate({
+                        top: endPositionTop,
+                        left: endPositionLeft,
+                        opacity: 0.2
+                    }, durationFall, 'linear', function () {
+                        $(this).remove()
+                    });
+                }, options.newOn);
+            };
+        })(jQuery);
+        $(function () {
+            $.fn.snow({
+                minSize: 5, /* 定义雪花最小尺寸 */
+                maxSize: 50,/* 定义雪花最大尺寸 */
+                newOn: 800  /* 定义密集程度，数字越小越密集 */
+            });
+        });
+
+        // 浏览器搞笑标题
+        var OriginTitle = document.title;
+        var titleTime;
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                // $('[rel="icon"]').attr('href', "/funny.ico");
+                document.title = '天涯导航';
+                clearTimeout(titleTime);
+            }
+            else {
+                $('[rel="icon"]').attr('href', "/favicon.ico");
+                document.title = '你来啦，老弟' ;
+                titleTime = setTimeout(function () {
+                    document.title = OriginTitle;
+                }, 2000);
+            }
+        });
+    </script>
+</body>
+
 </html>
